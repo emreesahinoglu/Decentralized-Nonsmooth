@@ -55,8 +55,6 @@ def save_results(config,results,oracle='first'):
     with open(pickle_file_name, 'wb') as handle:
         pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-
-dsname='w8a'
 oracle_setup='zero'
 
 
