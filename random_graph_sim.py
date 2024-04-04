@@ -69,7 +69,7 @@ erdos_renyi = True
 er_p=0.75
 
 
-T=400
+T=40000
 T_print=100
 T_restart=100
 num_agent = 20
