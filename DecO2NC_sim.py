@@ -22,12 +22,6 @@ def gen_sparse_dsm(k,p=1/3):
 
     return W 
 
-def second_eig(W):
-    Q,D = np.linalg.eig(W)
-    Q = -np.sort(-np.abs(Q))
-    return Q[1]
-
-
 
 def run_sim(dsname='a9a',D=1,lr=1e-4,oracle_setup='first',num_iter=50000,T_restart=500,T_print=500,num_agent=20):
     dataset = DatasetModel(dsname=dsname, mb_size= batch_size,num_agent=num_agent)
