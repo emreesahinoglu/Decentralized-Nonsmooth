@@ -108,10 +108,10 @@ def run_sgd_algo(agents,dataset,oracle,com_net,num_iter=50000,T_print=500):
 
         if k %T_print ==0:
             
-            # epoch_grad = [oracle.get_gradients(w,X1,y1) for w in avg_weight]
-            # gr = com_net.get_average(epoch_grad)
-            x_bar = com_net.get_average(avg_weight)
-            gr = oracle.get_gradients(x_bar,X1,y1)
+            epoch_grad = [oracle.get_gradients(w,X1,y1) for w in avg_weight]
+            gr = com_net.get_average(epoch_grad)
+            # x_bar = com_net.get_average(avg_weight)
+            # gr = oracle.get_gradients(x_bar,X1,y1)
             loss =  oracle.get_fn_val(x_bar,X1,y1)
             gr_per_norm=np.linalg.norm(gr)
             
@@ -172,10 +172,10 @@ def run_dgfm_algo(agents,dataset,oracle,com_net,num_iter=1e3,T_print=500):
         if k %T_print ==0:
             
 
-            # epoch_grad = [oracle.get_gradients(w,X1,y1) for w in avg_weight]
-            # gr = com_net.get_average(epoch_grad)
-            x_bar = com_net.get_average_weight(agents)
-            gr = oracle.get_gradients(x_bar,X1,y1)
+            epoch_grad = [oracle.get_gradients(w,X1,y1) for w in avg_weight]
+            gr = com_net.get_average(epoch_grad)
+            # x_bar = com_net.get_average_weight(agents)
+            # gr = oracle.get_gradients(x_bar,X1,y1)
             loss =  oracle.get_fn_val(x_bar,X1,y1)
             gr_per_norm=np.linalg.norm(gr)
             
