@@ -22,11 +22,6 @@ def gen_sparse_dsm(k,p=1/3):
 
     return W 
 
-def second_eig(W):
-    Q,D = np.linalg.eig(W)
-    Q = -np.sort(-np.abs(Q))
-    return Q[2]
-
 
 def run_sim(dsname='a9a',D=1,lr=1e-4,oracle_setup='first',num_iter=50000,T_print=500):
     dataset = DatasetModel(dsname=dsname, mb_size= batch_size,num_agent=num_agent)
@@ -60,7 +55,6 @@ def save_results(config,results):
         pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
-dsname='a9a'
 
 T=50000
 T_print=500
