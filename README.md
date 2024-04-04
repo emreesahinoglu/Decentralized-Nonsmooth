@@ -25,4 +25,7 @@ You can use eing_graph_sim.py to evaluate the effect of $\rho$.
 
 You can use random_graph_sim.py to evaluate the algorithm with Erdos Renyi random graphs.
 
+## Results
+
+Experiment results are saved in results folder.
 
