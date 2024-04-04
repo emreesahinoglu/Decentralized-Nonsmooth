@@ -19,7 +19,7 @@ You can use DPSGD_sim.py to evaluate DPSGD algorithm.
 
 # Ring Graph Experiments
 
-You can use eing_graph_sim.py to evaluate the effect of $\rho$.
+You can use ring_graph_sim.py to evaluate the effect of $\rho$.
 
 # Random Graph Experiments
 
