@@ -3,6 +3,10 @@
 ## Datasets
 Datasets can be downloaded from [this link](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/). Datasets must be located in upper level folder '../datasets/'.
 
+## Results
+
+You should make 'results' directory to save the results. In the 'results' directory you should have 'first' , 'zero' , 'dgfm', 'rho', 'er' folders.
+
 ## Simulations
 
 # Our Algorithm 
@@ -25,7 +29,5 @@ You can use ring_graph_sim.py to evaluate the effect of $\rho$.
 
 You can use random_graph_sim.py to evaluate the algorithm with Erdos Renyi random graphs.
 
-## Results
 
-Experiment results are saved in results folder.
 
