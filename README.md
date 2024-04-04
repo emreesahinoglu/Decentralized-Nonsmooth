@@ -17,7 +17,7 @@ You can use DGFM_sim.py to evaluate DGFM algorithm.
 
 You can use DPSGD_sim.py to evaluate DPSGD algorithm.
 
-# Ring Communication
+# Ring Graph Experiments
 
 You can use eing_graph_sim.py to evaluate the effect of $\rho$.
 
