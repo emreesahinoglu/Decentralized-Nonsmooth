@@ -58,7 +58,7 @@ def save_results(config,results,oracle='first'):
 oracle_setup='zero'
 
 
-T=1000
+T=40000
 T_print=500
 T_restart=500
 num_agent = 20
