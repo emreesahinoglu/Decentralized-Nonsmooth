@@ -43,7 +43,7 @@ def run_dgfm_sim(dsname='a9a',lr=1e-4,num_iter=50000,T_restart=500,T_print=500):
 
 dsnames=['a9a','ijcnn','covtype','HIGGS_500k','rcv','SUSY_500k']
 
-T=1000
+T=30000
 T_print=500
 num_agent = 20
 batch_size=128
